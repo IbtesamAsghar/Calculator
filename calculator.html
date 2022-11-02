@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="./calculator.css">
+
+<body>
+    <table class="container">
+
+
+        <tr>
+            <td colspan="3" class="textArea"><input type="text" class="text"></td>
+            <td> <input type="button" value="c" class="operators " style="background-color: rgb(248, 26, 100);"
+                    onclick="clearScreen()"></td>
+        </tr>
+        <tr>
+
+            <td><input type="button" value="1" class="btns" onclick="getInput(value)"></td>
+            <td><input type="button" value="2" class="btns" onclick="getInput(value)"></td>
+            <td><input type="button" value="3" class="btns" onclick="getInput(value)"></td>
+            <td><input type="button" value="/" class="operators" onclick="getInput(value)"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="4" class="btns" onclick="getInput(value)"></td>
+            <td><input type="button" value="5" class="btns" onclick="getInput(value)"></td>
+            <td><input type="button" value="6" class="btns" onclick="getInput(value)"></td>
+            <td><input type="button" value="-" class="operators" onclick="getInput(value)"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="7" class="btns" onclick="getInput(value)"></td>
+            <td><input type="button" value="8" class="btns" onclick="getInput(value)"></td>
+            <td><input type="button" value="9" class="btns" onclick="getInput(value)"></td>
+            <td><input type="button" value="+" class="operators" onclick="getInput(value)"></td>
+
+        </tr>
+        <tr>
+
+            <td><input type="button" value="." class="btns" onclick="getInput(value)"></td>
+            <td><input type="button" value="0" class="btns" onclick="getInput(value)"></td>
+            <td><input type="button" value="=" class="btns" style="background-color:rgb(248, 26, 100) ;"
+                    onclick="result(value)"></td>
+            <td><input type="button" value="*" class="operators" onclick="getInput(value)"></td>
+
+        </tr>
+
+    </table>
+    <script src="./calculator.js"></script>
+</body>
+
+</html>
